@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="n1">
+    <input type="text" id="n2">
+
+    <select id="operator" name="Option" >
+        <option >
+            Select
+        </option>
+        <option id="m1" value="Add" >
+            Add
+        </option>
+        <option id="m2" value="Sub">
+            Sub
+        </option>
+        <option id="m3" value="Mul">
+            Mul
+        </option>
+        <option id="m4" value="Div">
+            Div
+        </option>
+        <option id="m5" value="Mod">
+            Mod
+        </option>
+        </select>
+        <select id="operator1" name="Option" >
+            <option >
+                Select
+            </option>
+            <option id="c1" value="red" >
+                Red
+            </option>
+            <option id="c2" value="blue">
+                Blue
+            </option>
+            <option id="c3" value="green">
+                Green
+            </option>
+            <option id="c4" value="yellow">
+                Yellow
+            </option>
+            <option id="c5" value="black">
+                Black
+            </option>
+        </select>
+    
+    <script>
+                 document.getElementById("operator").onchange = function()
+                 {
+                    let x= Number(document.getElementById("n1").value);
+                    let y= Number(document.getElementById("n2").value);
+                    let op= document.getElementById("operator").value;
+                    if(op=="Add")
+                    {
+                        console.log(x+y);
+                    }
+                    else if(op=="Sub")
+                    {
+                        console.log(x-y);
+                    }
+                   else  if(op=="Mul")
+                    {
+                        console.log(x*y);
+                    }
+                    else if(op=="Div")
+                    {
+                        console.log(x/y);
+                    }
+                    else if(op=="Mod")
+                    {
+                        console.log(x%y);
+                    }
+                }
+                    document.getElementById("operator1").onchange = function()
+                    {
+                        let color= document.getElementById("operator1").value;
+                        if(color=="Red")
+                        {
+                            document.body.style.backgroundColor="red"
+                        }
+                        if(color=="Blue")
+                        {
+                            document.body.style.backgroundColor="blue"
+                        }
+                        if(color=="Green")
+                        {
+                            document.body.style.backgroundColor="green"
+                        }
+                        if(color=="Yellow")
+                        {
+                            document.body.style.backgroundColor="yellow"
+                        }
+                        if(color=="Black")
+                        {
+                            document.body.style.backgroundColor="black"
+                        }
+                        
+                    };
+                
+       
+    </script>
+</body>
+</html>
