@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[10,20,40,50,60,70,80]
+        // console.log(a.length)
+        // console.log(a.indexOf(20))
+        // a.push("Aman")
+        // console.log(a)
+        // a.pop("Aman")
+        // console.log(a)
+        // a.push("20")
+        // console.log(a)
+        // a.unshift(40)
+        // console.log(a)
+        // let a =[10,20,30,40,50,60,70,80]
+        // let x= a.shift()
+        // let y =a.pop()
+        // a.push(x)
+        // a.unshift(y)
+        // console.log(a)
+        // let a=Number(prompt("Enter the number"))
+        // let b=[]
+        // let flag=true
+        // for(let i=2;i<a;i++)
+        // {
+        //     if(a%i==0)
+        //     {
+        //       flag=false
+        //       break
+        //     }
+        // }
+        // for( i=2;i<a;i++)
+        // {
+        //     if(flag==true)
+        //     {
+        //     console.log(i)
+        //     }
+           
+        // }
+
+
+        //Slice and splice
+        // console.log(a.slice(0,5))
+        // a.splice(0,3,)
+        // console.log(a)
+
+
+
+        //Map function
+        // let b=a.map(function(item){
+        //     return item+2
+        // })
+        // console.log(b)
+    let b=a.map(function(item)
+    {
+        if(item<50)
+        {
+            return "fail"
+        }
+        else
+        {
+            return "pass"
+        }
+        
+    })
+    console.log(b)
+    </script>
+</body>
+</html>
